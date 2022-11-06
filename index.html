@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calcular PIB</title>
+</head>
+<body>
+    <nav>
+        <div class="title-container">
+          <h1>Calcular Producto Interno Bruto y Determinar el ingreso Per Capital</h1>
+        </div>
+    </nav>
+    <section class="container-main">
+        <div class="row1">
+            <h1>Elemtentos del PIB</h1>
+            <h2>Montos en Millones de Dolares</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="input-group">
+                    <label for="mining">Mineria - Hidrocarburos</label>
+                    <input type="number" id="mining">
+                </div>
+                <div class="input-group">
+                    <label for="factory">Manufactura</label>
+                    <input type="number" id="factory">
+                </div>
+                <div class="input-group">
+                    <label for="estate">Inmobiliarios</label>
+                    <input type="number" id="estate">
+                </div>
+            </div>
+
+            <div class="column">    
+                <div class="input-group">
+                    <label for="commerce">Comercios y Servicios</label>
+                    <input type="number" id="commerce" />
+                </div>
+                <div class="input-group">
+                    <label for="communication">Comunicaciones</label>
+                    <input type="number" id="communication" />
+                </div>
+                <div class="input-group">
+                    <label for="banking">Inst. Financieras</label>
+                    <input type="number" id="banking" />
+                </div>             
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column1">
+                <div class="input-group">
+                    <fieldset>
+                        <legend>Población del País</legend>
+                        <label for="population">POBLACiON:</label>
+                        <input type="number" id="population" />
+                    </fieldset>
+                </div>  
+            </div>        
+        </div>
+
+        <div class="row">
+            <div class="button-container">
+                <button id="btnCalcular" onclick="calculoPib()" type="button">Calcular</button>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column2">
+                <div class="result-group">
+                    <p>El Producto Interno Bruto es:</p>
+                    </br>
+                    <p id="totalProducto"></p>
+                </div> 
+            </div>
+
+            <div class="column2">
+                <div class="result-group">
+                    <p>El ingreso Per Capital es:</p>
+                     </br>   
+                    <p id="totalCapital"></p>
+                </div> 
+            </div> 
+        </div> 
+        
+        <div class="row1">
+            <h2>% por Elemtentos del PIB</h1>   
+        </div>
+
+        <div class="row">
+           
+            <div class="column2">
+                <div class="result-group">  
+                    <fieldset>
+                        <legend>MINERIA</legend>
+                        <p id="porcenmining"></p>
+                    </fieldset>
+                </div> 
+            </div>
+
+            <div class="column2">
+                <div class="result-group">
+                    <fieldset>
+                        <legend>MANUFACTURA</legend>
+                        <p id="porcenfactory"></p>
+                    </fieldset>
+                </div> 
+            </div> 
+
+            <div class="column2">
+                <div class="result-group">
+                    <fieldset>
+                        <legend>INMOBILARIOS</legend>
+                        <p id="porcenestate"></p>
+                    </fieldset>              
+                </div> 
+            </div>
+            
+            <div class="column2">
+                <div class="result-group">
+                    <fieldset>
+                        <legend>COMERCIOS</legend>
+                        <p id="porcencommerce"></p>
+                    </fieldset>
+                </div> 
+            </div>
+
+            <div class="column2">
+                <div class="result-group">
+                    <fieldset>
+                        <legend>COMUNICACIONES</legend>
+                        <p id="porcencommunication"></p>
+                    </fieldset>
+                </div> 
+            </div>
+
+            <div class="column2">
+                <div class="result-group">
+                    <fieldset>
+                        <legend>FINACIERAS</legend>
+                        <p id="porcenbanking"></p>
+                    </fieldset>
+                </div> 
+            </div>
+
+        </div> 
+        
+            
+    </section>
+
+    <script src="./calcularProductoInternoBruto.js"></script>
+</body>
+</html>
