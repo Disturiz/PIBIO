@@ -12,3 +12,6 @@ Instituciones Financieras
 
 Toda la Suma de estos elementos constituyen el PIB
 Y la dividirlo entre la población se tiene como resultado el Ingreso Per Capital
+
+Para generar la Grafica utilice la librería CHART.Js y pude partcticar el uso del metodo .map para trabajar con el arreglo para enviarlos valores
+de porcentajes de los elementos del Producto Interno Bruto.
