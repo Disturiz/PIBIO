@@ -3,7 +3,7 @@
 
 
 # Para conseguir el PIB se deben sumar todos los elementos que componen todos los bienes y servicio que produce dicho país por ejemplo:
-Mineria / Hif¿drocarburos
+Mineria / Hidrocarburos
 Manufactura
 Servicios inmobiliarios
 Comercio y servicios
