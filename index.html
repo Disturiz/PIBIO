@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles.css">
     <title>Calcular PIB</title>
@@ -87,7 +88,7 @@
         <div class="row">
             <div class="column2">
                 <div class="result-group">
-                    <p>El Producto Interno Bruto es:</p>
+                    <p class="rotulo">El Producto Interno Bruto es:</p>
                     </br>
                     <p id="totalProducto"></p>
                 </div> 
@@ -107,60 +108,62 @@
         </div>
 
         <div class="row">
-           
-            <div class="column2">
-                <div class="result-group">  
-                    <fieldset>
-                        <legend>MINERIA</legend>
-                        <p id="porcenmining"></p>
-                    </fieldset>
+            <div class="listado-elementos">
+                <div class="column2">
+                    <div class="result-group">  
+                        <fieldset>
+                            <legend>MINERIA</legend>
+                            <p id="porcenmining"></p>
+                        </fieldset>
+                    </div> 
+                </div>
+    
+                <div class="column2">
+                    <div class="result-group">
+                        <fieldset>
+                            <legend>MANUFACTURA</legend>
+                            <p id="porcenfactory"></p>
+                        </fieldset>
+                    </div> 
                 </div> 
-            </div>
-
-            <div class="column2">
-                <div class="result-group">
-                    <fieldset>
-                        <legend>MANUFACTURA</legend>
-                        <p id="porcenfactory"></p>
-                    </fieldset>
-                </div> 
-            </div> 
-
-            <div class="column2">
-                <div class="result-group">
-                    <fieldset>
-                        <legend>INMOBILARIOS</legend>
-                        <p id="porcenestate"></p>
-                    </fieldset>              
-                </div> 
+    
+                <div class="column2">
+                    <div class="result-group">
+                        <fieldset>
+                            <legend>INMOBILARIOS</legend>
+                            <p id="porcenestate"></p>
+                        </fieldset>              
+                    </div> 
+                </div>
+                
+                <div class="column2">
+                    <div class="result-group">
+                        <fieldset>
+                            <legend>COMERCIOS</legend>
+                            <p id="porcencommerce"></p>
+                        </fieldset>
+                    </div> 
+                </div>
+    
+                <div class="column2">
+                    <div class="result-group">
+                        <fieldset>
+                            <legend>COMUNICACIONES</legend>
+                            <p id="porcencommunication"></p>
+                        </fieldset>
+                    </div> 
+                </div>
+    
+                <div class="column2">
+                    <div class="result-group">
+                        <fieldset>
+                            <legend>FINACIERAS</legend>
+                            <p id="porcenbanking"></p>
+                        </fieldset>
+                    </div> 
+                </div>
             </div>
             
-            <div class="column2">
-                <div class="result-group">
-                    <fieldset>
-                        <legend>COMERCIOS</legend>
-                        <p id="porcencommerce"></p>
-                    </fieldset>
-                </div> 
-            </div>
-
-            <div class="column2">
-                <div class="result-group">
-                    <fieldset>
-                        <legend>COMUNICACIONES</legend>
-                        <p id="porcencommunication"></p>
-                    </fieldset>
-                </div> 
-            </div>
-
-            <div class="column2">
-                <div class="result-group">
-                    <fieldset>
-                        <legend>FINACIERAS</legend>
-                        <p id="porcenbanking"></p>
-                    </fieldset>
-                </div> 
-            </div>
 
         </div> 
 
@@ -174,5 +177,6 @@
 
     <script src="./calcularProductoInternoBruto.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
