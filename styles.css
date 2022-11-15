@@ -212,13 +212,13 @@ h2 {
   }
 
   .content {
-    background-color:#f7f5ed ;
     width: 30%;
     margin: auto;
     text-align: center;
   }
 
   .chart {
+    background-color:rgba(100, 102, 155, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
